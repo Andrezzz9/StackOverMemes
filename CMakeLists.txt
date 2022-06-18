@@ -14,7 +14,7 @@ set(CMAKE_BUILD_TYPE Debug)
 
 
 list(APPEND CMAKE_PREFIX_PATH "C:/Qt/5.15.2/mingw81_64")
-list(APPEND CMAKE_PREFIX_PATH "C:/Hobby/StackOverMemes/build/3rdparty/opencv/")
+list(APPEND CMAKE_PREFIX_PATH ${CMAKE_SOURCE_DIR}/build/3rdparty/opencv/)
 #list(APPEND CMAKE_PREFIX_PATH C:/Hobby/StackOverMemes/build/3rdparty/opencv/install/x64/vc17/staticlib)
 
 find_package(Qt5 COMPONENTS Core)
