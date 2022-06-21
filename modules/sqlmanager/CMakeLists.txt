@@ -9,7 +9,7 @@ find_package(Qt5 COMPONENTS Core)
 
 set(SOURCE_LIB sqlmanager.cpp)
 
-add_library(sqlmanager STATIC ${SOURCE_LIB})
+add_library(sqlmanager ${SOURCE_LIB})
 
 # Линковка программы с библиотекой
 target_link_libraries(

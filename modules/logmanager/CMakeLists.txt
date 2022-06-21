@@ -9,7 +9,7 @@ find_package(Qt5 COMPONENTS Core)
 
 set(SOURCE_LIB logmanager.cpp)
 
-add_library(logmanager STATIC ${SOURCE_LIB})
+add_library(logmanager ${SOURCE_LIB})
 
 # Линковка программы с библиотекой
 target_link_libraries(

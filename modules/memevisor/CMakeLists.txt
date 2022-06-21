@@ -10,7 +10,7 @@ set(CMAKE_BUILD_TYPE Debug)
 
 set(SOURCE_LIB memevisor.cpp)
 
-add_library(memevisor STATIC ${SOURCE_LIB})
+add_library(memevisor ${SOURCE_LIB})
 
 link_directories( ${OPENCV_LIBRARY_DIRS} )
 
