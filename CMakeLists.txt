@@ -108,6 +108,11 @@ file(GLOB dll_files_3rd ${PROJECT_BINARY_DIR}/3rdparty/opencv/bin/Debug/*.dll)
     INSTALL(FILES ${dll_3rd} DESTINATION bin)
   endforeach()	
 
+#Установка рабочего каталога для проекта в Visual Studio
+if((MSVC) AND (${CMAKE_VERSION} VERSION_GREATER "3.8.2"))
+set_target_properties (${PRJ_NAME} PROPERTIES VS_DEBUGGER_WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}/build/bin")
+endif()
+
 #set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/bin")
 #message(STATUS "~~~~~~~~~~~~~~~~${CMAKE_RUNTIME_OUTPUT_DIRECTORY}")
 	
