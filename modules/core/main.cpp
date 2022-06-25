@@ -10,9 +10,11 @@ int main(int argc, char** argv)
 {
 	QCoreApplication app(argc, argv);
 
+	// Инциализация сборщика данных
 	VkManager dataCollector;
 	dataCollector.getData();
 	
+	// Инициализация парсера данных
 	VkManager dataParser;
 	dataParser.dataParse();
 
