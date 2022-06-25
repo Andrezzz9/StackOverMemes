@@ -13,5 +13,8 @@ int main(int argc, char** argv)
 	VkManager dataCollector;
 	dataCollector.getData();
 	
+	VkManager dataParser;
+	dataParser.dataParse();
+
 	return app.exec();
 }

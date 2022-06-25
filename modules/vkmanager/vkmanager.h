@@ -1,8 +1,10 @@
 #include <QtNetwork/QNetworkRequest>
 #include <QtNetwork/QNetworkAccessManager>
 #include <QtNetwork/QNetworkReply>
+#include <QtNetwork/QSslConfiguration>
 #include <QObject>
 #include <QString>
+#include <QFile>
 
 
 class VkManager: public QObject 
@@ -13,6 +15,7 @@ public:
 	~VkManager();
 
 	void getData();
+	void dataParse();
 
 public slots:
 	void replyFinished(QNetworkReply* reply);
@@ -20,4 +23,5 @@ public slots:
 private:
 	QNetworkAccessManager* m_manager;
 	QNetworkRequest m_request;
+	QSslConfiguration m_sslConfig;
 };
