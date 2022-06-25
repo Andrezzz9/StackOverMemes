@@ -9,6 +9,8 @@ find_package(Qt5 COMPONENTS Core Network)
 
 set(SOURCE_LIB vkmanager.cpp)
 
+include_directories(C:/Qt/Tools/OpenSSL/Win_x64/include)
+
 add_library(vkmanager ${SOURCE_LIB})
 
 # Линковка программы с библиотекой

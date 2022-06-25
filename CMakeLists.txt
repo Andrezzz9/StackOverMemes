@@ -34,6 +34,7 @@ include_directories(./modules/vkmanager)
 include_directories(./modules/logmanager)
 include_directories(./modules/sqlmanager)
 include_directories(./modules/memevisor)
+include_directories(C:/Qt/Tools/OpenSSL/Win_x64/include)
 
 add_executable(${PRJ_NAME} ${SOURCE_EXE})	# Создает исполняемый файл с именем main
 

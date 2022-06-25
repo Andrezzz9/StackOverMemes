@@ -1,17 +1,17 @@
-#include <QString>
-#include <iostream>
 #include "logmanager.h"
 #include "vkmanager.h"
 #include "memevisor.h"
+#include <QCoreApplication>
+#include <iostream>
 
 using namespace std;
 
 int main(int argc, char** argv)
 {
-	std::cout << "Hello, World!" << std::endl;
+	QCoreApplication app(argc, argv);
 
-	MemeVisor visor;
-	visor.test();
-
-	return 0;
+	VkManager dataCollector;
+	dataCollector.getData();
+	
+	return app.exec();
 }
