@@ -1,4 +1,4 @@
-#include "logmanager.h"
+п»ї#include "logmanager.h"
 #include "vkmanager.h"
 #include "memevisor.h"
 #include <QCoreApplication>
@@ -10,11 +10,11 @@ int main(int argc, char** argv)
 {
 	QCoreApplication app(argc, argv);
 
-	// Инциализация сборщика данных
+	// РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ СЃР±РѕСЂС‰РёРєР° РґР°РЅРЅС‹С…
 	VkManager dataCollector;
 	dataCollector.getData();
 	
-	// Инициализация парсера данных
+	// РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ РїР°СЂСЃРµСЂР° РґР°РЅРЅС‹С…
 	VkManager dataParser;
 	dataParser.dataParse();
 
