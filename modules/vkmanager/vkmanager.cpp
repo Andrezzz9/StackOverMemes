@@ -1,4 +1,4 @@
-﻿#include "vkmanager.h"
+#include "vkmanager.h"
 #include <iostream>
 #include <QtNetwork>
 #include <QFile>
@@ -35,7 +35,7 @@ void VkManager::getData()
 	// Запрос
 	m_manager->get(m_request);
 	
-	qDebug() << "Request sent";
+	qDebug() << "Запрос отправлен";
 }
 
 

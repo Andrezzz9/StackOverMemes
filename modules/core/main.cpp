@@ -1,4 +1,4 @@
-﻿#include "logmanager.h"
+#include "logmanager.h"
 #include "vkmanager.h"
 #include "memevisor.h"
 #include <QCoreApplication>
@@ -20,19 +20,19 @@ int main(int argc, char** argv)
 #ifdef Q_OS_LINUX
 	QTextCodec::setCodecForLocale(QTextCodec::codecForName("UTF-8"));
 #endif
-	// РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ Р»РѕРіР°
+	// Инициализация лога
 	LogManager log;
 
 	// Инициализация сборщика
 	VkManager dataCollector;
-	dataCollector.get;
+	dataCollector.getData();
 	
 	// Инициализация парсера данных
 	VkManager dataParser;
 	dataParser.dataParse();
 
-	qDebug() << "РћР“Рћ! Р”РµР±Р°Рі!";
-	qWarning() << " ~~ test РїСЂРµРґСѓРїСЂРµР¶РґРµРЅРёРµ";
+	qDebug() << "ОГО! Дебаг!";
+	qWarning() << " ~~ test предупреждение";
 
 	return app->exec();
 }
