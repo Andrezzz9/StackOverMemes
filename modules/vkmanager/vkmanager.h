@@ -20,12 +20,13 @@ public:
 	~VkManager();
 
 	void getData();
-	void dataParse();
 
 public slots:
 	void replyFinished(QNetworkReply* reply);
 
 private:
+	void dataParse();
+
 	QNetworkAccessManager* m_manager;
 	QNetworkRequest m_request;
 	QSslConfiguration m_sslConfig;
